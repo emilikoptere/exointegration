@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'CalSans';
+    src: url('CalSans-Regular.woff2') format('woff2'),
+        url('CalSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('LibreBaskerville-Regular.woff2') format('woff2'),
+        url('LibreBaskerville-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+
+header{
+    font-size: 40px;
+}
+
+.text{
+    color: black;
+}
+
+.element{
+    font-family: 'CalSans';
+    background-color: rgb(238, 238, 238);
+    
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    padding: 20px;
+
+    z-index: 1000;
+}  
+
+.icon{
+    width: 60px;
+    padding: 20px;
+}
+
+.info{
+    white-space: pre-line;
+
+
+    background-color: rgb(43, 46, 41);
+    position: relative;
+    padding: 40px;
+    bottom: 0;
+    width: 100%;
+
+    font-size: 25px;
+
+    z-index: 1000;
+}  
+
+.cercle{
+    padding: 20px;
+    width: 150px;
+}
+
+.logo{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.imgd{
+    gap: 100px;
+    
+    width: 100%;
+    height: auto;
+
+    z-index: 1100;
+} 
+
+.img{
+    width: 50%;
+    height: auto;
+
+    z-index: 1100;
+}
+
+.photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.imglien{
+    display: flex;
+    
+    color: black;
+}
+
+.bas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:'CalSans';
+    color: white;
+    padding-block-start: 70px;
+}
+
+.o{
+    text-decoration: none;
+    color: white;
+    font-size: 200px;
+    padding-right: 40px ;
+}
+
+.lien{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    
+}
+
