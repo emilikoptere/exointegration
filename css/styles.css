@@ -17,120 +17,364 @@
 }
 
 
-
 body{
     margin: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(235, 231, 228);
 }
-
 
 header{
     font-size: 40px;
 }
 
-.text{
-    color: black;
-}
-
 .element{
     font-family: 'CalSans';
-    background-color: rgb(238, 238, 238);
-    
+    background-color: rgb(235, 231, 228);
+
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     top: 0;
     left: 0;
-    width: 100%;
     height: 30px;
     padding: 20px;
 
     z-index: 1000;
-}  
+}
+
+.work{
+    color: rgb(56, 56, 56);
+}
 
 .icon{
-    width: 60px;
-    padding: 20px;
+    width: 50px;
+    padding: 0;
 }
 
-.info{
-    white-space: pre-line;
-
-
-    background-color: rgb(43, 46, 41);
-    position: relative;
-    padding: 40px;
-    bottom: 0;
-    width: 100%;
-
-    font-size: 25px;
-
-    z-index: 1000;
-}  
-
-.cercle{
-    padding: 20px;
-    width: 150px;
+.navhaut{
+    display: none;
 }
 
-.logo{
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-}
-
-.imgd{
-    gap: 100px;
-    
-    width: 100%;
-    height: auto;
-
-    z-index: 1100;
-} 
-
-.img{
-    width: 50%;
-    height: auto;
-
-    z-index: 1100;
-}
-
-.photo{
+.picture{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
-    gap: 50px;
+    gap: 70px;
 }
 
-.imglien{
+.colonne{
     display: flex;
-    
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    width: 100%;
+}
+
+.bloc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    width: 100%;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+
+    z-index: 1100;
+}
+
+.img{
+    width: 55%;
+    height: auto;
+
+    z-index: 1100;
+}
+
+.link_img{
+    display: block;
+    width: 55%;
+    text-align: center;
+    font-family: 'LibreBaskerville';
+    font-size: 15px;
+
     color: black;
 }
 
-.bas{
+.link_image{
+    display: block;
+    width: 55%;
+    text-align: center;
+    font-family: 'LibreBaskerville';
+    font-size: 15px;
+
+    color: black;
+}
+
+.down{
+    color: white;
+    padding-top: 100px;
+}
+
+.info{
+    background-color: rgb(43, 46, 41);
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px 25px 40px; 
+
+    font-size: 25px;
+}
+
+.logo{
+    font-family: 'CalSans';
+    font-size: 40px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-family:'CalSans';
-    color: white;
-    padding-block-start: 70px;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
-.o{
-    text-decoration: none;
-    color: white;
-    font-size: 200px;
-    padding-right: 40px ;
+.cercle{
+    width: 120px;
+    height: 120px;
+    border: 30px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-right: 40px;
 }
 
-.lien{
+.liens{
+    font-family: 'CalSans';
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.link{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 30px;
-    
+    font-size: 25px;
 }
 
+.haut{
+    position: absolute;
+    right: 25px;
+    bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 60px;
+
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.fleche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border: 2px solid white;
+    border-radius: 50%;
+
+    font-size: 24px;
+}
+
+.menu_bg{
+    background-color: rgb(43, 46, 41);
+    min-height: 100vh;
+}
+
+.menu_bg .element{
+    background-color: rgb(43, 46, 41);
+    color: white;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.croix{
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding-top: 70px;
+    font-family: 'CalSans';
+}
+
+.menulink{
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.portrait{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.paragraphe{
+    font-family: 'CalSans';
+    font-size: 18px;
+    line-height: 26px;
+    color: black;
+    margin: 0;
+    padding: 70px 40px 10px;
+}
+
+
+
+
+
+@media screen and (min-width: 880px){
+
+    header{
+        font-size: 95px;              
+    }
+
+    .element{
+        justify-content: center;       
+        height: auto;
+        /* line-height: 1; */
+    }
+
+    .burger{
+        display: none;           
+    }
+
+    .navhaut{
+        display: block;             
+        font-family: 'CalSans';
+        font-size: 22px;
+        padding: 0 24px;
+    }
+
+    .navhaut a{
+        display: block;                
+        color: black;
+        text-decoration: none;
+    }
+
+    .menu_bg header{
+        font-size: 40px;
+    }
+
+    .menu_bg .element{
+        justify-content: space-between;
+        /* line-height: normal; */
+    }
+
+    .picture{
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 40px 10px 0;
+    }
+
+    .colonne{
+        width: auto;
+    }
+
+    .droite{
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .gauche{
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    .bloc{
+        width: auto;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 15px;
+    }
+
+    .gauche .bloc{
+        flex-direction: row-reverse;
+    }
+
+    .image{
+        width: 60%;
+    }
+
+    .img{
+        width: 30%;
+    }
+
+    .img.large{
+        width: 70%;
+    }
+
+    .link_image,
+    .link_img{
+        width: 40%;
+        font-size: 8px;
+    }
+
+    .link_image{
+        text-align: left;
+    }
+
+    .link_img{
+        text-align: right;
+    }
+
+    .portrait{
+        max-height: 600px;
+        object-fit: cover;
+    }
+
+    .paragraphe{
+        padding: 70px 20vw 10px;
+    }
+
+    .down{
+        padding-top: 75px;
+    }
+
+    .info{
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        padding: 70px 19vw 70px 10vw;
+    }
+
+    .logo{
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+
+    .cercle{
+        width: 100px;
+        height: 100px;
+        border-width: 25px;
+        margin-right: 20px;
+    }
+
+    .liens{
+        align-items: flex-end;        
+    }
+
+    .haut{
+        display: none;                 
+    }
+}
